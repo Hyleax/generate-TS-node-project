@@ -2,10 +2,11 @@
 
 // THIS CODE GENERATES A TYPESCRIPT-NODE PROJECT
 
-import { log } from 'console'
+import { log, time, timeEnd, clear } from 'console'
 import fs from 'fs'
 import { cwd } from 'process'
 import path from 'path'
+import { execSync } from 'child_process'
 
 // import file contents 
 import { 
@@ -58,6 +59,10 @@ const createDirectory = (pathAndContent: pathContents[]) => {
   
   // create the ./src directory
   if (!fs.existsSync(srcDirectoryPath)){
+   
+    // clear console
+    clear()
+
     fs.mkdirSync(srcDirectoryPath);
     log('created /src directory - 1/6')
   }
@@ -75,7 +80,15 @@ const createFiles = (pathAndContent: pathContents[]) => {
   })
 
   log(`all files and directories successfully created`)
-  log(`a TypeScript-Node Project has been generated
+
+  // install all dev dependencies in package.json
+  log(`installing Dependencies...
+  `)
+  time("all Dependencies have been installed")
+  execSync("npm install -D");
+  timeEnd(`all Dependencies have been installed`)
+
+  log(`new TypeScript-Node Project generated
   `)
 }
 

@@ -38,22 +38,24 @@ export const packagejsonFileContents: string =
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
 }
 `
 
 export const instructionsMDContents: string = 
 `
-
-# Please run the following command in the terminal to download all the dependencies for the project: 
-npm i @types/node nodemon ts-node typescript --save-dev
-
 ## Run this command if you would like to create an express-TS project:
 npm i express @types/express
 ### Copy this import statement into app.ts
 import express, { Application, Request, Response, NextFunction } from 'express';
 
-* please install all TypeScript(TS) related dependencies before executing the scripts located in 'package.json'
+* please ensure that all TypeScript(TS) related dependencies are properly installed before executing the scripts located in 'package.json'
 * enter all TS code in /src folder
 * enter 'npm start' to run 'app.ts' with fast refresh(nodemon)
 * compile TS code by running 'npm run build' 
