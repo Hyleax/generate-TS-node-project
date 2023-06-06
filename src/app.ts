@@ -31,7 +31,7 @@ type pathContents= {
   contents: string
 }
 
-const pathAndContents = [
+const pathAndContents: pathContents[] = [
   {
     path: tsconfigFilePath,
     contents: tsConfigFileContents
