@@ -1,0 +1,15 @@
+
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./bin",
+      "rootDir": "./src",
+      "strict": true,
+      "types": ["node"],
+      "esModuleInterop": true,
+      "resolveJsonModule": true
+    }
+  }
+
