@@ -27,7 +27,8 @@ cd newDir
 gen-ts-node-proj
 ```
 
-### You should have this folder structure in your new directory, along with all the devDepencies installed
+### You should have this folder structure in your new directory
 
-![ts-node-project-folder-structure](./images/gen-node-ts-proj-folder-structure.JPG)
-
+![ts-node-project-folder-structure](./images/gen-node-ts-proj-folder-structure.png)
+### Along with all the __devDependencies__ installed
+![ts-node-dev-dependencies](./images/devDependencies.png)
