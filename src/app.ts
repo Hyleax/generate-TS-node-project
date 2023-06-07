@@ -57,12 +57,13 @@ const pathAndContents: pathContents[] = [
 
 const createDirectory = (pathAndContent: pathContents[]) => {
   
-  // create the ./src directory
+  // check if directory with name '/src' already exists in folder
   if (!fs.existsSync(srcDirectoryPath)){
    
     // clear console
     clear()
 
+    // create the ./src directory
     fs.mkdirSync(srcDirectoryPath);
     log('created /src directory - 1/6')
   }
